@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_1.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
+
+    <style>
+        button {
+            font-size: 2vw; /* Tamaño de fuente más pequeño */
+            padding: 10px 20px; /* Padding más pequeño */
+            margin: 30px auto; /* Centrado horizontalmente */
+            display: block; /* Asegura que el botón sea un bloque y respete el auto margin */
+            background-color: #144699;
+            color: black;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+            border: none; /* Sin borde */
+            width: 300px; /* Ancho fijo más pequeño */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="greetings">
+        <span>H</span>
+        <span>o</span>
+        <span>l</span>
+        <span>a</span>
+        <span>&nbsp;</span>
+        <span>P</span>
+        <span>r</span>
+        <span>e</span>
+        <span>c</span>
+        <span>i</span>
+        <span>o</span>
+        <span>s</span>
+        <span>a</span>
+        <span>!</span>
+    </div>
+    <div class="description">
+        <span>💖 Te quiero mucho mi niña 💖</span>
+    </div>
+
+
+    <button onclick="window.location.href='flores.html'" style="color: #fff;">
+        ¡Presiona aquí!
+    </button>
+
+    <script>
+        function startMusic() {
+            // Guardar una bandera en localStorage para reproducir música en la siguiente página
+            localStorage.setItem('playMusic', 'true');
+            window.location.href = 'flores.html';
+        }
+    </script>
+
+</body>
+
+</html>

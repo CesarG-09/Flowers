@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  background: rgb(255, 255, 255, 0);
+}
+
+.titulo {
+  text-align: center;
+  font-family: Lucida Calligraphy, sans-serif;
+  color: rgb(255, 92, 92);
+  margin-top: 20vh;
+  animation: flotar 2s linear infinite alternate;
+}
+
+@keyframes flotar {
+  to {
+    margin-top: 15vh;
+  }
+}
+
+.burbujas div {
+
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  animation: animarburbujas 4s linear infinite;
+}
+
+.burbujas div:nth-child(1) {
+  background: url('img/1.jpg') no-repeat center center/cover;
+  width: 84px;  /* Aumento de tamaño */
+  height: 102px;  /* Aumento de tamaño */
+  left: 40px;
+  animation-duration: 4s;
+}
+
+.burbujas div:nth-child(2) {
+  background: url('img/2.jpg') no-repeat center center/cover;
+  width: 96px;  /* Aumento de tamaño */
+  height: 90px;  /* Aumento de tamaño */
+  left: 25%;
+  animation-duration: 8s;
+}
+
+.burbujas div:nth-child(3) {
+  background: url('img/3.jpg') no-repeat center center/cover;
+  width: 60px;  /* Aumento de tamaño */
+  height: 56px;  /* Aumento de tamaño */
+  left: 40%;
+  animation-duration: 5s;
+}
+
+.burbujas div:nth-child(4) {
+  background: url('img/4.jpg') no-repeat center center/cover;
+  width: 102px;  /* Aumento de tamaño */
+  height: 96px;  /* Aumento de tamaño */
+  left: 50%;
+  animation-duration: 10s;
+}
+
+.burbujas div:nth-child(5) {
+  background: url('img/5.jpg') no-repeat center center/cover;
+  width: 90px;  /* Aumento de tamaño */
+  height: 84px;  /* Aumento de tamaño */
+  left: 65%;
+  animation-duration: 6.5s;
+}
+
+.burbujas div:nth-child(6) {
+  background: url('img/6.jpg') no-repeat center center/cover;
+  width: 84px;  /* Aumento de tamaño */
+  height: 82px;  /* Aumento de tamaño */
+  left: 85%;
+  animation-duration: 9s;
+}
+
+.burbujas div:nth-child(7) {
+  background: url('img/7.jpg') no-repeat center center/cover;
+  width: 66px;  /* Aumento de tamaño */
+  height: 62px;  /* Aumento de tamaño */
+  left: 90%;
+  animation-duration: 6s;
+}
+
+@keyframes animarburbujas {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  5% {
+    width: 70px; /* Tamaño inicial controlado */
+    height: 65px;
+    opacity: 0.9; /* Aparece casi completamente visible */
+  }
+  25% {
+    width: 85px; /* Crecimiento moderado */
+    height: 80px;
+    opacity: 1; /* Completamente visible */
+    transform: rotate(20deg);
+  }
+  50% {
+    margin-left: 20px;
+    opacity: 0.7;
+    transform: rotate(45deg); /* Rotación ligera */
+  }
+  75% {
+    opacity: 0.5;
+    transform: rotate(60deg); /* Incrementa la rotación */
+  }
+  100% {
+    transform: rotate(90deg); /* Rotación final controlada */
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+
+
